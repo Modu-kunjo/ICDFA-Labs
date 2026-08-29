@@ -3,7 +3,7 @@
 
 **Assessment Type:** Practical Security Assessment  
 **Course:** Offensive Security I  
-**Lab:** 2 of 5  
+**Lab:** 2 
 **Environment:** Isolated local training environment  
 **Applications:** Damn Vulnerable Web Application (DVWA) and OWASP Mutillidae II  
 **Testing Tool:** Burp Suite  
@@ -175,9 +175,9 @@ Develop recommendations addressing:
 | Evidence ID | Application | Test | Status |
 |---|---|---|---|
 | E01 | DVWA | Upload marker preparation | Completed |
-| E02 | DVWA | Normal upload baseline | In progress |
+| E02 | DVWA | Normal upload baseline | Completed |
 | E03 | DVWA | Filename/content mismatch | Completed |
-| E04 | DVWA | Successful upload and storage assessment | Pending |
+| E04 | DVWA | Successful upload and storage assessment | Completed |
 | E05 | Mutillidae II | Normal upload baseline | Pending |
 | E06 | Mutillidae II | Upload validation/storage assessment | Pending |
 | E07 | DVWA | Command-execution baseline | Pending |
