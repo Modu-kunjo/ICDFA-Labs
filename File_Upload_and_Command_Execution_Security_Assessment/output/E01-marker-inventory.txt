@@ -1,0 +1,10 @@
+== E01: HARMLESS UPLOAD MARKER INVENTORY ==
+Sat Aug 29 22:30:53 WCAST 2026
+
+-- File Properties --
+-rw-r--r-- 1 moduk 197609 84 Aug 29 22:17 upload-marker.txt
+upload-marker.txt: ASCII text
+84 upload-marker.txt
+
+-- SHA-256 --
+13bc692f9e69dabdeffc7c93040f1d1087cca59c19ff5a099b8724e5ea7b278a *upload-marker.txt

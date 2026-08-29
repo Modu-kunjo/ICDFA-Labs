@@ -1,0 +1,43 @@
+POST /DVWA/vulnerabilities/upload/ HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 613
+Cache-Control: max-age=0
+sec-ch-ua: "Not-A.Brand";v="24", "Chromium";v="146"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Accept-Language: en-US,en;q=0.9
+Origin: http://127.0.0.1:8080
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBI7gf0AIyFfORTZW
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://127.0.0.1:8080/DVWA/vulnerabilities/upload/
+Accept-Encoding: gzip, deflate, br
+Cookie: showhints=1; security=impossible; PHPSESSID=<REDACTED
+Connection: keep-alive
+
+------WebKitFormBoundaryBI7gf0AIyFfORTZW
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+100000
+------WebKitFormBoundaryBI7gf0AIyFfORTZW
+Content-Disposition: form-data; name="uploaded"; filename="upload-marker.txt"
+Content-Type: text/plain
+
+File-upload-Maker
+Created: 29-08-29
+Purpose: harmless file-upload validation marker
+
+------WebKitFormBoundaryBI7gf0AIyFfORTZW
+Content-Disposition: form-data; name="Upload"
+
+Upload
+------WebKitFormBoundaryBI7gf0AIyFfORTZW
+Content-Disposition: form-data; name="user_token"
+
+13ffedde4ec3ebbcc0bb4ad30b972478
+------WebKitFormBoundaryBI7gf0AIyFfORTZW--
