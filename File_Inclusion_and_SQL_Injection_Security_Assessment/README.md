@@ -70,6 +70,6 @@ Recommended controls include:
 - Confirm no database dump or persistent artefact was created.
 
 **Environment:** Local/host-only DVWA and OWASP Mutillidae II  
-**Lab:** 3 of 5  
+**Lab:** 3 
 **Course:** Offensive Security I  
-**Course Window:** 24 August–6 September 2026
+**Course Window:** 24 August– 1 September 2026
