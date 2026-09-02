@@ -22,8 +22,8 @@ Assess unsafe file/resource selection and database queries in DVWA and OWASP Mut
 
 | Evidence | Description | Status |
 |---|---|---|
-| E01 | File-selection baseline | Pending |
-| E02 | LFI marker and hash | Pending |
+| E01 | File-selection baseline | Completed |
+| E02 | LFI marker and hash | Completed |
 | E03 | Path/error disclosure | Pending |
 | E04 | Controlled RFI marker, if assigned | Pending |
 | E05 | SQL baseline | Pending |
