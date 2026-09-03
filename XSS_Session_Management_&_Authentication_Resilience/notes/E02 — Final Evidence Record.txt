@@ -1,0 +1,8 @@
+Application: DVWA
+Endpoint: /DVWA/vulnerabilities/xss_r/
+Parameter: name
+Security: Low
+Payload: <script>alert('ICDFA-XSS')</script>
+HTTP result: 200 OK
+Observed: Payload reflected into the <pre> HTML element.
+Result: Reflected XSS confirmed if the alert executed.

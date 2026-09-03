@@ -1,0 +1,22 @@
+Evidence ID: E04
+Application: DVWA
+Test: Stored Cross-Site Scripting (XSS)
+Endpoint: /DVWA/vulnerabilities/xss_s/
+Security Level: Low
+
+Note:
+A harmless JavaScript marker, <script>alert('ICDFA-STORED-XSS')</script>, was submitted through the DVWA guestbook message field. The application stored the supplied content without adequate output encoding. The stored payload was subsequently returned when the guestbook was accessed from a second learner-controlled browser session, demonstrating persistence across sessions.
+
+The response from the second session contained the stored script payload, confirming that the application retrieves and renders the previously submitted user-controlled content.
+
+Security Finding:
+Stored XSS is confirmed because attacker-controlled input is persisted by the application and later rendered to other users/sessions without appropriate context-aware output encoding.
+
+Impact:
+A malicious user could potentially cause JavaScript to execute in the browser of another user viewing the affected content. In this assessment, only a harmless visual alert marker was used.
+
+Evidence Purpose:
+Demonstrates stored XSS submission, server-side persistence, and retrieval from an independent learner-controlled session.
+
+Cleanup:
+The stored test entry should be removed after evidence capture.

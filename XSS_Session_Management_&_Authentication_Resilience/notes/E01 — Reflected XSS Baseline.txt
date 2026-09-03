@@ -1,0 +1,10 @@
+Application: DVWA
+Endpoint: /DVWA/vulnerabilities/xss_r/
+Method: GET
+Parameter: name
+Security level: Low
+Baseline input: m kunjo
+Observed response: Hello m kunjo
+Rendering context: HTML body, inside <pre>
+Behavior: The name parameter is reflected into the server-generated HTML response without encoding.
+Evidence: E01-request.txt, E01-response.txt, E01-screenshot.png

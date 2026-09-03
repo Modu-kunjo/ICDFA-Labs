@@ -1,0 +1,64 @@
+Application: DVWA
+Endpoint: /DVWA/vulnerabilities/xss_d/
+Security Level: Low
+Date: 2026-09-03
+
+SOURCE
+------
+The JavaScript reads attacker-controlled data from the browser URL:
+
+if (document.location.href.indexOf("default=") >= 0) {
+    var lang = document.location.href.substring(
+        document.location.href.indexOf("default=")+8
+    );
+
+SOURCE IDENTIFICATION:
+document.location.href
+
+The URL parameter being processed is:
+default=Spanish
+
+
+DATA FLOW
+---------
+document.location.href
+        ↓
+substring(... "default=" ...)
+        ↓
+lang
+        ↓
+document.write(...)
+
+
+SINK
+----
+The extracted value is written directly into the HTML DOM:
+
+document.write("<option value='" + lang + "'>" + decodeURI(lang) + "</option>");
+
+SINK IDENTIFICATION:
+document.write()
+
+
+RENDERING CONTEXT
+-----------------
+The value is inserted into an HTML <option> element:
+
+<option value='" + lang + "'>" + decodeURI(lang) + "</option>
+
+The value is therefore being inserted into an HTML/attribute context
+through document.write().
+
+FINDING
+-------
+The client-side JavaScript obtains data from document.location.href and
+passes the extracted value to document.write() without context-appropriate
+encoding. This establishes a source-to-sink DOM XSS data flow.
+
+EVIDENCE SOURCE
+---------------
+HTTP 200 response captured from:
+GET /DVWA/vulnerabilities/xss_d/?default=Spanish
+
+No server-side reflection of the payload is required for this DOM-based
+data flow; the JavaScript processes the URL at runtime.
