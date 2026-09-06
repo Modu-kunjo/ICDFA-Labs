@@ -1,0 +1,28 @@
+Application: DVWA
+Test: Session Lifecycle and Logout Invalidation
+Endpoint: /DVWA/login.php and /DVWA/index.php
+
+Pre-login:
+A PHPSESSID was present before authentication.
+
+Post-login:
+Successful authentication returned HTTP 302 and issued a different PHPSESSID, demonstrating session ID rotation after login.
+
+Logout:
+The authenticated session was logged out successfully.
+
+Old-session validation:
+The previously authenticated session ID was replayed against /DVWA/index.php after logout.
+
+Observation:
+HTTP 302 Found
+Location: login.php
+
+Conclusion:
+The authenticated session was invalidated after logout. Reusing the old authenticated session resulted in redirection to the login page rather than access to the authenticated dashboard.
+
+Security assessment:
+Session rotation after login provides protection against session fixation, while logout invalidation prevents continued use of the terminated authenticated session.
+
+Evidence purpose:
+Demonstrate the complete pre-login → authentication → session rotation → logout → old-session invalidation lifecycle.

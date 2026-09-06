@@ -1,0 +1,13 @@
+HTTP/1.1 302 Found
+Date: Thu, 03 Sep 2026 08:24:30 GMT
+Server: Apache/2.4.68 (Debian)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=a34db7693671b8d1e7193bc5c7233521; expires=Fri, 04 Sep 2026 08:24:30 GMT; Max-Age=86400; path=/; domain=127.0.0.1; HttpOnly; SameSite=Strict
+Location: index.php
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+

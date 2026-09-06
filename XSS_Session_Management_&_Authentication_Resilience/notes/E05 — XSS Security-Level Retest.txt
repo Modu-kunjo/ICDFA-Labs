@@ -1,0 +1,35 @@
+Application: DVWA
+Endpoint: /DVWA/vulnerabilities/xss_r/
+Security Level: Medium
+Method: GET
+Parameter: name
+
+Test
+
+The harmless XSS proof payload used during the Low-security assessment was retested at Medium security:
+
+<script>alert('ICDFA-RETEST')</script>
+
+Observation
+
+The HTTP response returned:
+
+<pre>Hello alert('ICDFA-RETEST')</script></pre>
+
+The opening <script> element was removed before reflection, while the remaining attacker-controlled content was still reflected into the HTML response.
+
+Finding
+
+DVWA Medium applies partial input filtering that changes the submitted XSS payload. However, the application still reflects attacker-controlled content into an HTML rendering context.
+
+The result demonstrates that filtering provides stronger resistance than the Low configuration but does not constitute robust context-aware output encoding.
+
+Evidence Purpose
+
+E05 demonstrates the difference in XSS handling between the Low and Medium security configurations and provides evidence for the security-control comparison.
+
+Conclusion
+
+Medium: Partial mitigation observed.
+Low: Unfiltered reflected XSS was previously confirmed.
+Security assessment: Medium reduces the demonstrated payload's ability to execute but should not be considered a complete XSS defense.
