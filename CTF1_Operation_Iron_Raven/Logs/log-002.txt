@@ -1,0 +1,8 @@
+LOG-002
+Phase: P1 – Reconnaissance
+Action: sudo nmap -sn 192.168.56.0/24
+Purpose: Discover reachable hosts within the isolated assessment subnet
+Observation: 192.168.56.100 and 192.168.56.102 responded; 192.168.56.101 is Kali
+Result: Two candidate target hosts identified
+Decision: Verify candidate hosts before service enumeration
+Evidence: E-002

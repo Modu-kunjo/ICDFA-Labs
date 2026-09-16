@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Sep 12 18:07:53 2026 as: /usr/lib/nmap/nmap -sn -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase1-host-discovery 192.168.56.0/24 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sn -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase1-host-discovery 192.168.56.0/24" start="1789250873" startstr="Sat Sep 12 18:07:53 2026" version="7.99" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.100" addrtype="ipv4"/>
+<address addr="08:00:27:7F:27:91" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="2421" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.102" addrtype="ipv4"/>
+<address addr="08:00:27:79:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="877" rttvar="2266" to="100000"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.56.101" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kali.local" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1789250877" timestr="Sat Sep 12 18:07:57 2026" summary="Nmap done at Sat Sep 12 18:07:57 2026; 256 IP addresses (3 hosts up) scanned in 4.80 seconds" elapsed="4.80" exit="success"/><hosts up="3" down="253" total="256"/>
+</runstats>
+</nmaprun>

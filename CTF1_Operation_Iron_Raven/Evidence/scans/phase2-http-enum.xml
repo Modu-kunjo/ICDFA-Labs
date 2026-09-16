@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Sep 15 04:22:51 2026 as: /usr/lib/nmap/nmap -p80 -&#45;script http-title,http-headers,http-methods -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-http-enum 192.168.56.102 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -p80 -&#45;script http-title,http-headers,http-methods -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-http-enum 192.168.56.102" start="1789460571" startstr="Tue Sep 15 04:22:51 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.102" addrtype="ipv4"/>
+<address addr="08:00:27:79:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789460577" endtime="1789460577"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.102" addrtype="ipv4"/>
+<address addr="08:00:27:79:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-title" output="Raven Security"><elem key="title">Raven Security</elem>
+</script><script id="http-headers" output="&#xa;  Date: Sun, 13 Sep 2026 14:34:28 GMT&#xa;  Server: Apache/2.4.10 (Debian)&#xa;  Last-Modified: Sun, 12 Aug 2018 22:29:32 GMT&#xa;  ETag: &quot;41b3-5734482bdcb00&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 16819&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS GET HEAD"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="1538" rttvar="3919" to="100000"/>
+</host>
+<runstats><finished time="1789460577" timestr="Tue Sep 15 04:22:57 2026" summary="Nmap done at Tue Sep 15 04:22:57 2026; 1 IP address (1 host up) scanned in 5.61 seconds" elapsed="5.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,14 @@
+LOG-003
+Phase: P1/P2 – Reconnaissance / Attack-Surface Enumeration
+Action: Target verification scan against 192.168.56.100 and 192.168.56.102
+Purpose: Differentiate candidate hosts and identify exposed services
+Observation:
+192.168.56.100 had all tested TCP ports closed.
+192.168.56.102 exposed TCP/22 SSH and TCP/80 HTTP.
+SSH identified as OpenSSH 6.7p1 Debian.
+HTTP identified as Apache 2.4.10 on Debian.
+Result:
+192.168.56.102 is the strong OPFOR-01 candidate based on its exposed services and Linux fingerprint.
+Decision:
+Proceed with systematic enumeration of 192.168.56.102.
+Evidence: E-003

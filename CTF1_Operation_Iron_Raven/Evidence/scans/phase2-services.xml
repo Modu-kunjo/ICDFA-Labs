@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Sep 13 18:25:25 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-services 192.168.56.102 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-services 192.168.56.102" start="1789338325" startstr="Sun Sep 13 18:25:25 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.102" addrtype="ipv4"/>
+<address addr="08:00:27:79:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789338327" endtime="1789338335"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.102" addrtype="ipv4"/>
+<address addr="08:00:27:79:51:B2" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="6.7p1 Debian 5+deb8u4" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 26:81:c1:f3:5e:01:ef:93:49:3d:91:1e:ae:8b:3c:fc (DSA)&#xa;  2048 31:58:01:19:4d:a2:80:a6:b9:0d:40:98:1c:97:aa:53 (RSA)&#xa;  256 1f:77:31:19:de:b0:e1:6d:ca:77:07:76:84:d3:a9:a0 (ECDSA)&#xa;  256 0e:85:71:a8:a2:c3:08:69:9c:91:c0:3f:84:18:df:ae (ED25519)"><table>
+<elem key="fingerprint">2681c1f35e01ef93493d911eae8b3cfc</elem>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAKh+Rdkjjy5opFFtXyNt53JA6r4vcBU/5phBALFa3s/Tp1nk905px99+yBZcDIsWCJRcpZLSjrB6HLSP32+zhb9pnVWpTS8Jj7Sxrz1UKww4jiqLTRWM498YHjUrTKPkKb9hC4+xhZjVme8BA7JP65hGMJFHWbmWbDIeQ014EVAJAAAAFQDco2jBlKC2i5fJa3EJU8Cjb7la1wAAAIBZgJ8eIMdjFiKHPVKBClyJeUKdlSh0zsLVz4qNOsd9Q1Tn0qUsHRFHzZ4TKxitg6ICqq3COGIf09sevQHZR2tvDm5mV/mx9rBDK88h31ZyiuGr6aEoo+xPZR4TY++mFNY+deB3N7qtGpUH0ACMgrzfFjtIoaxub9y8IzlTTeB+uQAAAIB9h0DDtN8hOxAkGnFKV3hsq4VivzclLtuUD8vFk6Br51X1S2TdrWCsjqJC+RqW3Q6Z/QNJo3CqlflRbT92HMDenF1h04ET7tv9Rzplj89rFI0NEJ1MUgWkIsf4O4kyM2I6c27Law+tsa1htco6mTuoc8jLOhlhccbsYSgUnhfcNg==</elem>
+</table>
+<table>
+<elem key="fingerprint">315801194da280a6b90d40981c97aa53</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDV+10/5GT/t8oHYE/2droICkXQmZ+vUokINs67o65J9JuOTwxfYpcDKG7Ir5SCVyht+9yblaT4CDKpEkTP7i3yZH1kATaNThwwwDrbYJj2Trn0lCNRMzL8UwYIYBQLVGSBPr40i+rp0aimY6NCohYE7yPZfGQCMgUabN70ZOPX5av/11pe4aaiB1VkdQI6KGOIxX9BzXZ+xx18aGY2L4gEHsSFKHsCHMDcf0LRwCL57JU7slPLH52dgsQc+XxLwjRPOdi3ndVrXnwGkEMBdw0eM7Ta0UyJnsMoynCkaJFG7FaNe/hdkI68g4o8nugBk4RiKOlDBxAIHYT+YUQmrJaF</elem>
+</table>
+<table>
+<elem key="fingerprint">1f773119deb0e16dca77077684d3a9a0</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFWnVibAcyZ6gXZIUhw1P2L5l+9u9WKbtJn4rAZ0+MDtzwKhN/d6sqH3FUnTcswHaT8pKcJvGKSGZae1oqxb3oQ=</elem>
+</table>
+<table>
+<elem key="fingerprint">0e8571a8a2c308699c91c03f8418dfae</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIAesXwn7VLv7XmXLfdeAjITtlzFHXlFpvHQt4gnQ3xSI</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.10" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.10</cpe></service><script id="http-server-header" output="Apache/2.4.10 (Debian)"><elem>Apache/2.4.10 (Debian)</elem>
+</script><script id="http-title" output="Raven Security"><elem key="title">Raven Security</elem>
+</script></port>
+</ports>
+<times srtt="7074" rttvar="11273" to="100000"/>
+</host>
+<runstats><finished time="1789338335" timestr="Sun Sep 13 18:25:35 2026" summary="Nmap done at Sun Sep 13 18:25:35 2026; 1 IP address (1 host up) scanned in 9.57 seconds" elapsed="9.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

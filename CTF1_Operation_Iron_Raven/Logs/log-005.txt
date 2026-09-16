@@ -1,0 +1,18 @@
+E-005
+Phase: P2 – Attack-Surface Enumeration
+
+Tool: Gobuster 3.8.2
+Target: http://192.168.56.102/
+Wordlist: /usr/share/wordlists/dirb/common.txt
+Threads: 10
+
+Key findings:
+- /wordpress/ → HTTP 301
+- /manual/ → HTTP 301
+- /server-status → HTTP 403
+- /.htaccess → HTTP 403
+- /.htpasswd → HTTP 403
+
+Assessment:
+The WordPress application and manual directory require
+further manual validation.

@@ -1,0 +1,36 @@
+.hta                [33m (Status: 403)[0m [Size: 303]
+.hta.txt            [33m (Status: 403)[0m [Size: 307]
+.hta.zip            [33m (Status: 403)[0m [Size: 307]
+.htaccess           [33m (Status: 403)[0m [Size: 308]
+.hta.old            [33m (Status: 403)[0m [Size: 307]
+.hta.php            [33m (Status: 403)[0m [Size: 307]
+.hta.bak            [33m (Status: 403)[0m [Size: 307]
+.htaccess.bak       [33m (Status: 403)[0m [Size: 312]
+.htpasswd.php       [33m (Status: 403)[0m [Size: 312]
+.htaccess.txt       [33m (Status: 403)[0m [Size: 312]
+.htaccess.old       [33m (Status: 403)[0m [Size: 312]
+.htpasswd.old       [33m (Status: 403)[0m [Size: 312]
+.htpasswd           [33m (Status: 403)[0m [Size: 308]
+.htaccess.php       [33m (Status: 403)[0m [Size: 312]
+.htpasswd.bak       [33m (Status: 403)[0m [Size: 312]
+.htpasswd.txt       [33m (Status: 403)[0m [Size: 312]
+.htaccess.zip       [33m (Status: 403)[0m [Size: 312]
+.htpasswd.zip       [33m (Status: 403)[0m [Size: 312]
+index.php           [36m (Status: 301)[0m [Size: 0][34m [--> http://192.168.56.102/wordpress/][0m
+index.php           [36m (Status: 301)[0m [Size: 0][34m [--> http://192.168.56.102/wordpress/][0m
+license.txt         [32m (Status: 200)[0m [Size: 19935]
+wp-admin            [36m (Status: 301)[0m [Size: 329][34m [--> http://192.168.56.102/wordpress/wp-admin/][0m
+wp-content          [36m (Status: 301)[0m [Size: 331][34m [--> http://192.168.56.102/wordpress/wp-content/][0m
+wp-includes         [36m (Status: 301)[0m [Size: 332][34m [--> http://192.168.56.102/wordpress/wp-includes/][0m
+wp-settings.php     [31m (Status: 500)[0m [Size: 0]
+wp-config.php       [32m (Status: 200)[0m [Size: 0]
+wp-blog-header.php  [32m (Status: 200)[0m [Size: 0]
+wp-signup.php       [36m (Status: 302)[0m [Size: 0][34m [--> http://raven.local/wordpress/wp-login.php?action=register][0m
+wp-links-opml.php   [32m (Status: 200)[0m [Size: 224]
+wp-login.php        [32m (Status: 200)[0m [Size: 2463]
+wp-cron.php         [32m (Status: 200)[0m [Size: 0]
+wp-load.php         [32m (Status: 200)[0m [Size: 0]
+wp-mail.php         [33m (Status: 403)[0m [Size: 3444]
+wp-trackback.php    [32m (Status: 200)[0m [Size: 135]
+xmlrpc.php          [33m (Status: 405)[0m [Size: 42]
+xmlrpc.php          [33m (Status: 405)[0m [Size: 42]

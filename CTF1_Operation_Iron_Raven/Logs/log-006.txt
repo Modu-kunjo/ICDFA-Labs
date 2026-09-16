@@ -1,0 +1,10 @@
+E - 006
+Phase: Attack-Surface Enumeration
+
+Tool: WordPress user enumeration using WPScan
+Purpose: Identify publicly exposed WordPress account identifiers that may expand the authentication attack surface.
+Observation/Result: WPScan identified two WordPress users: steven and michael. Both accounts were confirmed through author ID enumeration and login error behavior. Author ID testing subsequently confirmed author ID 1 as michael and author ID 2 as Steven Seagull/steven. Author IDs 3-10 returned no valid author pages.
+
+Evidence E-006
+
+Assessment: Confirmed information disclosure of valid WordPress usernames. No authentication compromise was performed during this step.

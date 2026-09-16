@@ -1,0 +1,7 @@
+LOG-001
+Phase: P0 – Preparation
+Action: Verified Kali network configuration
+Purpose: Confirm attacker VM is connected to isolated assessment network
+Observation: eth0 = 192.168.56.101/24; route exists for 192.168.56.0/24
+Result: Kali has connectivity to the isolated lab subnet
+Evidence: E-001

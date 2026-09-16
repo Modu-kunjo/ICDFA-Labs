@@ -1,0 +1,19 @@
+# Nmap 7.99 scan initiated Sun Sep 13 18:25:25 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-services 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0071s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 26:81:c1:f3:5e:01:ef:93:49:3d:91:1e:ae:8b:3c:fc (DSA)
+|   2048 31:58:01:19:4d:a2:80:a6:b9:0d:40:98:1c:97:aa:53 (RSA)
+|   256 1f:77:31:19:de:b0:e1:6d:ca:77:07:76:84:d3:a9:a0 (ECDSA)
+|_  256 0e:85:71:a8:a2:c3:08:69:9c:91:c0:3f:84:18:df:ae (ED25519)
+80/tcp open  http    Apache httpd 2.4.10 ((Debian))
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-title: Raven Security
+MAC Address: 08:00:27:79:51:B2 (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 13 18:25:35 2026 -- 1 IP address (1 host up) scanned in 9.57 seconds

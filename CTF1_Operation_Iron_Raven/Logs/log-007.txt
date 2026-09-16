@@ -1,0 +1,9 @@
+E-007
+
+Phase: Mission Evidence / Attack-Surface Enumeration
+Action: Retrieved and inspected image exposed through WordPress uploads directory
+Purpose: Validate whether publicly indexed upload content contained assessment-relevant artifacts.
+Observation/Result: An image exposed through the publicly browsable uploads directory contained the assessment artifact flag3{a0f568aa9de277887f37730d71520d9}.
+
+Evidence: E-007
+Assessment: Confirmed objective artifact disclosure through unauthenticated directory indexing.

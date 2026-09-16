@@ -1,0 +1,24 @@
+# Nmap 7.99 scan initiated Tue Sep 15 04:22:51 2026 as: /usr/lib/nmap/nmap -p80 --script http-title,http-headers,http-methods -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase2-http-enum 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0015s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-title: Raven Security
+| http-headers: 
+|   Date: Sun, 13 Sep 2026 14:34:28 GMT
+|   Server: Apache/2.4.10 (Debian)
+|   Last-Modified: Sun, 12 Aug 2018 22:29:32 GMT
+|   ETag: "41b3-5734482bdcb00"
+|   Accept-Ranges: bytes
+|   Content-Length: 16819
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+MAC Address: 08:00:27:79:51:B2 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Tue Sep 15 04:22:57 2026 -- 1 IP address (1 host up) scanned in 5.61 seconds

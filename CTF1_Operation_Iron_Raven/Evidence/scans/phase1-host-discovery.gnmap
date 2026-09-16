@@ -1,0 +1,5 @@
+# Nmap 7.99 scan initiated Sat Sep 12 18:07:53 2026 as: /usr/lib/nmap/nmap -sn -oA /home/kunjosec/CIP-A105_CTF1_Iron-Raven/scans/phase1-host-discovery 192.168.56.0/24
+Host: 192.168.56.100 ()	Status: Up
+Host: 192.168.56.102 ()	Status: Up
+Host: 192.168.56.101 (kali.local)	Status: Up
+# Nmap done at Sat Sep 12 18:07:57 2026 -- 256 IP addresses (3 hosts up) scanned in 4.80 seconds
