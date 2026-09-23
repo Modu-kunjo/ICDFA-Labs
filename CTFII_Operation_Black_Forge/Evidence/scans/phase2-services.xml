@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sat Sep 19 19:22:21 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTFII_Black-forge/scans/phase2-services 192.168.56.103 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTFII_Black-forge/scans/phase2-services 192.168.56.103" start="1789860141" startstr="Sat Sep 19 19:22:21 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.103" addrtype="ipv4"/>
+<address addr="08:00:27:B5:CA:71" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1789860142" endtime="1789860149"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.56.103" addrtype="ipv4"/>
+<address addr="08:00:27:B5:CA:71" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.17" extrainfo="(PCLinuxOS 2011/PREFORK-1pclos2011)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.17</cpe></service><script id="http-server-header" output="Apache/2.2.17 (PCLinuxOS 2011/PREFORK-1pclos2011)"><elem>Apache/2.2.17 (PCLinuxOS 2011/PREFORK-1pclos2011)</elem>
+</script><script id="http-title" output="Coming Soon 2"><elem key="title">Coming Soon 2</elem>
+</script><script id="http-robots.txt" output="8 disallowed entries &#xa;/manual/ /manual-2.2/ /addon-modules/ /doc/ /images/ &#xa;/all_our_e-mail_addresses /admin/ /"/></port>
+</ports>
+<times srtt="1101" rttvar="2906" to="100000"/>
+</host>
+<runstats><finished time="1789860149" timestr="Sat Sep 19 19:22:29 2026" summary="Nmap done at Sat Sep 19 19:22:29 2026; 1 IP address (1 host up) scanned in 8.50 seconds" elapsed="8.50" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

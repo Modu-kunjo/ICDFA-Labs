@@ -1,0 +1,16 @@
+# Nmap 7.99 scan initiated Sat Sep 19 19:22:21 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTFII_Black-forge/scans/phase2-services 192.168.56.103
+Nmap scan report for 192.168.56.103
+Host is up (0.0011s latency).
+
+PORT   STATE  SERVICE VERSION
+22/tcp closed ssh
+80/tcp open   http    Apache httpd 2.2.17 ((PCLinuxOS 2011/PREFORK-1pclos2011))
+|_http-server-header: Apache/2.2.17 (PCLinuxOS 2011/PREFORK-1pclos2011)
+|_http-title: Coming Soon 2
+| http-robots.txt: 8 disallowed entries 
+| /manual/ /manual-2.2/ /addon-modules/ /doc/ /images/ 
+|_/all_our_e-mail_addresses /admin/ /
+MAC Address: 08:00:27:B5:CA:71 (Oracle VirtualBox virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 19 19:22:29 2026 -- 1 IP address (1 host up) scanned in 8.50 seconds

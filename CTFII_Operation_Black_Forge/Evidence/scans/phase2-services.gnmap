@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Sat Sep 19 19:22:21 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA /home/kunjosec/CIP-A105_CTFII_Black-forge/scans/phase2-services 192.168.56.103
+Host: 192.168.56.103 ()	Status: Up
+Host: 192.168.56.103 ()	Ports: 22/closed/tcp//ssh///, 80/open/tcp//http//Apache httpd 2.2.17 ((PCLinuxOS 2011|PREFORK-1pclos2011))/
+# Nmap done at Sat Sep 19 19:22:29 2026 -- 1 IP address (1 host up) scanned in 8.50 seconds

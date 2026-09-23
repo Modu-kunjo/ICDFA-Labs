@@ -1,0 +1,13 @@
+images              [36m (Status: 301)[0m [Size: 344][34m [--> http://192.168.56.103/images/][0m
+index               [32m (Status: 200)[0m [Size: 5031]
+css                 [36m (Status: 301)[0m [Size: 341][34m [--> http://192.168.56.103/css/][0m
+js                  [36m (Status: 301)[0m [Size: 340][34m [--> http://192.168.56.103/js/][0m
+vendor              [36m (Status: 301)[0m [Size: 344][34m [--> http://192.168.56.103/vendor/][0m
+favicon             [32m (Status: 200)[0m [Size: 1406]
+robots              [32m (Status: 200)[0m [Size: 620]
+fonts               [36m (Status: 301)[0m [Size: 343][34m [--> http://192.168.56.103/fonts/][0m
+gitweb              [36m (Status: 301)[0m [Size: 344][34m [--> http://192.168.56.103/gitweb/][0m
+phpMyAdmin          [33m (Status: 403)[0m [Size: 59]
+server-status       [33m (Status: 403)[0m [Size: 1000]
+server-info         [33m (Status: 403)[0m [Size: 1000]
+openemr             [36m (Status: 301)[0m [Size: 345][34m [--> http://192.168.56.103/openemr/][0m

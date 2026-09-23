@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Sat Sep 19 19:15:20 2026 as: /usr/lib/nmap/nmap -sn -oA /home/kunjosec/CIP-A105_CTFII_Black-forge/scans/phase1-host-discovery 192.168.56.0/24
+Nmap scan report for 192.168.56.100
+Host is up (0.00061s latency).
+MAC Address: 08:00:27:AC:AB:FA (Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.56.103
+Host is up (0.00088s latency).
+MAC Address: 08:00:27:B5:CA:71 (Oracle VirtualBox virtual NIC)
+Nmap scan report for kali.local (192.168.56.101)
+Host is up.
+# Nmap done at Sat Sep 19 19:15:26 2026 -- 256 IP addresses (3 hosts up) scanned in 6.27 seconds
